@@ -68,4 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
         cardTotalValue.textContent = `R$ ${total.toFixed(2)}`;
     }
     const limparTabela = document.getElementById('limpar-pedido');
+    limparTabela.addEventListener('click', () => {
+        localStorage.removeItem('cart'); // remove o item 'cart' do localStorage
+        location.reload(true); // recarrega a página atual
+    })
 })

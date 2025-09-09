@@ -20,4 +20,7 @@
     font-size: 1.2rem;
     color: white;
     background-color: rgb(44, 145, 13);
+    border: none;
+    border-radius: 8px;
+    width: 200px;
 }

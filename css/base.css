@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(240, 229, 217);
+    color: rgb(46, 46, 46);
+    line-height: 3.0; /* espaçamento da linha */
+}
+
+.main-header {
+    background-color: #1E2044;
+    color: rgb(240, 229, 217);
+    padding: 5px;
+    text-align: center;
+    position: sticky; /* fica fixo no  */
+    top: 0; /**/
+    z-index: 1000; /**/
+}
+
+.main-header h1{
+    font-family: 'Montserrat';
+    font-size: 36px;
+    margin-top: 25px;
+}
+
+nav ul {
+    list-style: none; /* estilizar a lista */
+    padding: 1rem 0 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 50px;
+}
+
+nav ul li a{
+    color: rgb(240, 229, 217);
+    text-decoration: none; /* tirar o azul do link */ 
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    transition: color 0.3s ease; 
+    color: #565880; /* cor ao passar por cima */
+    border-bottom: 2px solid #565880; /* linha embaixo das páginas */
+}
+
+.main-footer {
+    background-color: #1E2044;
+    color: rgb(240, 229, 217);
+    padding: 5rem 0;
+    text-align: center;
+    margin-top: 20dvh;
+}

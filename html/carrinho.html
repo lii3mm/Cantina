@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantina SENAI | Carrinho</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/carrinho.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>Cantina | SENAI</h1>
+        <nav>
+            <ul> <!-- li = lista
+                      ul = lista não ordenada 
+                      ol = lista ordenada -->
+                <li><a href="/html/index.html">Início</a></li>
+                <li><a href="/html/produtos.html">Produtos</a></li>
+                <li><a href="/html/carrinho.html">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card-section">
+            <h2>Meu pedido</h2>
+                <div id="card-itens-container">
+                    <p>Seu carrinho está vazio</p>
+                </div>
+                <div class="card-total">
+                    <h3>Total : <span id="card-total-value">R$0,00</span></h3>
+                </div>
+                <button id="checkout-btn" class="btn">Finalizar pedido via WhatsApp</button>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <p> &copy; Desenvolvido pelos belos programadores de DEV no SENAI 2A</p>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>

@@ -66,10 +66,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         // atualizar o texto do valor total da página
         cardTotalValue.textContent = `R$ ${total.toFixed(2)}`;
+
+        checkoutBtn.addEventListener('click', () => {
+            const nmrWhats = '5515991355919';
+            // montar a mensagem do pedido 
+            let mensagem = 'Olá, segue meu pedido!:\n\n';
+            cart.forEach(product => {
+                mensagem += `-${product.name}: (R$ ${product.price.toFixed(2)})\n`;
+            });
+            mensagem += `\n*Total: R$ ${total.toFixed(2)}*`;
+
+            const urlWhatsApp = `https://wa.me/${5515991355919}?text=${encodeURIComponent(mensagem)}`;
+            window.open(urlWhatsApp, '_blank');
+            location.reload('cart');
+        });
     }
-    const limparTabela = document.getElementById('limpar-pedido');
-    limparTabela.addEventListener('click', () => {
-        localStorage.removeItem('cart'); // remove o item 'cart' do localStorage
-        location.reload(true); // recarrega a página atual
+        const limparTabela = document.getElementById('limpar-pedido');
+        limparTabela.addEventListener('click', () => {
+            localStorage.removeItem('cart'); // remove o item 'cart' do localStorage
+            location.reload(true); // recarrega a página atual
     })
 })

@@ -15,7 +15,7 @@ body {
 }
 
 .main-header {
-    background-color: #1E2044;
+    background-color: #164194;
     color: rgb(240, 229, 217);
     padding: 5px;
     text-align: center;
@@ -48,12 +48,12 @@ nav ul li a{
 
 nav ul li a:hover {
     transition: color 0.3s ease; 
-    color: #565880; /* cor ao passar por cima */
-    border-bottom: 2px solid #565880; /* linha embaixo das páginas */
+    color: #5e85d3; /* cor ao passar por cima */
+    border-bottom: 2px solid #5e85d3; /* linha embaixo das páginas */
 }
 
 .main-footer {
-    background-color: #1E2044;
+    background-color: #164194;
     color: rgb(240, 229, 217);
     padding: 5rem 0;
     text-align: center;
